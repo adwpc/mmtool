@@ -14,7 +14,7 @@ ERR="$CURDIR/$NAME.err"
 
 function ffmpeg_inst()
 {
-    sudo yum -y install autoconf automake gettext gcc gcc-c++ make libtool mercurial pkgconfig patch libXext-devel glibc-static libstdc++-static
+    run sudo yum -y install autoconf automake gettext gcc gcc-c++ make libtool mercurial pkgconfig patch libXext-devel glibc-static libstdc++-static
 
     export PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig"
     local src="$HOME/ffmpeg_source"
