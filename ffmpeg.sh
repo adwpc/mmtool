@@ -16,7 +16,8 @@ ERR="$CURDIR/$0.err"
 
 function ffmpeg_inst()
 {
-    run sudo yum -y install autoconf automake gettext gcc gcc-c++ make libtool mercurial pkgconfig patch libXext-devel
+    run sudo yum -y install autoconf automake gettext gcc gcc-c++ make libtool mercurial pkgconfig patch libXext-devel glibc-static libstdc++-static
+
     export PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig"
     local src="$HOME/ffmpeg_source"
     local dst="$HOME/ffmpeg_build"
@@ -35,7 +36,9 @@ function ffmpeg_inst()
     inst $src https://github.com/webmproject/libvpx git ./configure --prefix="$dst" --disable-shared --disable-examples --disable-unit-tests --enable-vp9-highbitdepth --as=yasm 
     inst $src https://github.com/webmproject/libwebp git ./configure --prefix="$dst" --disable-shared
     inst $src https://github.com/mirror/x264 git ./configure --prefix="$dst" --bindir="$bin" --enable-static
-    inst $src https://github.com/videolan/x265 git "cd $src/x265/build/linux \&\& cmake -G \"Unix\ Makefiles\" -DCMAKE_INSTALL_PREFIX=$dst -DENABLE_SHARED:bool=off ../../source"
+    # do not use cmake 3 for building x265, x265.pc will be bad for building static ffmpeg
+    run rm $bin/cmake
+    inst $src https://github.com/videolan/x265 git "cd $src/x265/build/linux \&\& cmake -G \'Unix\ Makefiles\' -DCMAKE_INSTALL_PREFIX=$dst -DENABLE_SHARED:bool=off ../../source"
     inst $src https://github.com/xiph/opus git ./configure --prefix="$dst" --disable-shared
     inst $src https://github.com/mstorsjo/fdk-aac git ./configure --prefix="$dst" --disable-shared
     inst $src https://github.com/xiph/ogg git ./configure --prefix="$dst" --disable-shared
@@ -51,7 +54,7 @@ function ffmpeg_inst()
 
     inst $src https://sourceforge.net/projects/lame/files/latest/download wget "cd $src/lame* \&\& ./configure --prefix=$dst --bindir=$bin --disable-shared --enable-nasm"
 
-    inst $src https://github.com/FFmpeg/FFmpeg git ./configure --prefix="$dst" --enable-hardcoded-tables --pkg-config-flags="--static" --extra-cflags="-I$dst/include" --extra-ldflags="-L$dst/lib" --extra-libs=-lpthread --extra-libs=-lm --bindir="$bin" --enable-gpl --enable-nonfree --enable-openssl --enable-protocol=rtmp --enable-librtmp --enable-demuxer=rtsp --enable-muxer=rtsp --enable-libfreetype --enable-libfdk-aac --enable-libmp3lame --enable-libopus --enable-libvorbis --enable-libtheora --enable-libx264 --enable-libx265 --enable-libvpx --enable-libwebp --enable-ffplay --enable-libaom --disable-shared --enable-static --disable-debug --enable-gpl --enable-nonfree
+    inst $src https://github.com/FFmpeg/FFmpeg git "./configure --prefix=$dst --enable-hardcoded-tables --pkg-config-flags=--static --extra-cflags=-I$dst/include --extra-ldflags=-L$dst/lib --extra-libs=-lpthread --extra-libs=-lm --extra-ldexeflags=-static --bindir=$bin --enable-gpl --enable-nonfree --enable-openssl --enable-protocol=rtmp --enable-librtmp --enable-demuxer=rtsp --enable-muxer=rtsp --enable-libfreetype --enable-libfdk-aac --enable-libmp3lame --enable-libopus --enable-libvorbis --enable-libtheora --enable-libx264 --enable-libx265 --enable-libvpx --enable-libwebp --enable-ffplay --enable-libaom --disable-shared --enable-static --disable-debug --enable-gpl --enable-nonfree"
 
 }
 
