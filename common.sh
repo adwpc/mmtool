@@ -114,7 +114,7 @@ function get()
         run wget $url -c -O wget.data
         uz wget.data
     else
-        ltag=`git ls-remote --tags "$url" | awk '{print $2}' | grep -v '{}' | awk -F"/" '{print $3}' | grep -iEv 'dev|alpha|beta|rc|pre|test|fips|engine' | grep -e "$ver" | sort -V | tail -n1`
+        ltag=`git ls-remote --tags "$url" | awk '{print $2}' | grep -v '{}' | awk -F"/" '{print $3}' | grep -iEv 'dev|alpha|beta|rc|pre|test|fips|engine' | grep -w "$ver" | sort -V | head -n1`
     fi
 
     if [[ "$ver" != "wget" ]]; then
