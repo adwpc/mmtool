@@ -84,7 +84,11 @@ function run()
 #mv to tmp
 function saferm()
 {
-    mv $1 "/tmp/$1`date +%Y%m%d%H%M%S`" > /dev/null 2>&1
+    # local name=`echo "$1" | awk -F'/' '{print $NF}' | awk -F'.' '{print $1}'`
+    local name="${1%/}"
+    name="${name##*/}"
+    mv $1 "/tmp/$name`date +%Y%m%d%H%M%S`" 
+    # > /dev/null 2>&1
 }
 
 
