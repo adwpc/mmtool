@@ -319,3 +319,19 @@ function inst() {
     return 1
 
 }
+
+#memory size by KB
+#usage: $(getmaxmem)
+function getmaxmem()
+{
+    local mem=`free -k|grep "Mem"|awk -F' ' '{print $2}'`
+    echo "$mem"
+}
+
+#get cpu cores
+#usage: $(getmaxcpu)
+function getmaxcpu()
+{
+    local cpu=`cat /proc/cpuinfo |grep processor|awk -F' ' '{print $3}'|tail -n1`
+    echo "$cpu"
+}
