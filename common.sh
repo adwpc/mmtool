@@ -71,6 +71,7 @@ function run()
     eval $@ 1>>"$LOG" 2>>"$ERR"
     local ret=$?
     if [[ $ret -ne 0 ]];then
+        eval $@ 1>>"$LOG" 2>>"$ERR"
         if [[ $ret -eq 2 ]];then
             #e.g. make distclean fail return 2
             echol WARN "warning:$@, ret=$ret"
