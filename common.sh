@@ -1,6 +1,36 @@
 #!/bin/bash
 #adwpc
 
+if [ -f /etc/os-release ]; then
+    # freedesktop.org and systemd
+    . /etc/os-release
+    OS=$NAME
+    VER=$VERSION_ID
+elif type lsb_release >/dev/null 2>&1; then
+    # linuxbase.org
+    OS=$(lsb_release -si)
+    VER=$(lsb_release -sr)
+elif [ -f /etc/lsb-release ]; then
+    # For some versions of Debian/Ubuntu without lsb_release command
+    . /etc/lsb-release
+    OS=$DISTRIB_ID
+    VER=$DISTRIB_RELEASE
+elif [ -f /etc/debian_version ]; then
+    # Older Debian/Ubuntu/etc.
+    OS=Debian
+    VER=$(cat /etc/debian_version)
+elif [ -f /etc/SuSe-release ]; then
+    # Older SuSE/etc.
+    ...
+elif [ -f /etc/redhat-release ]; then
+    # Older Red Hat, CentOS, etc.
+    ...
+else
+    # Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
+    OS=$(uname -s)
+    VER=$(uname -r)
+fi
+
 if [[ "$LOG" == "" ]];then
     LOG="$0.log"
 fi
@@ -30,19 +60,28 @@ function exist() {
 #init tools
 function _init() {
     local tools=""
-    for tool in wget git svn hg automake autoconf gcc g++; do
+    for tool in wget git svn hg automake autoconf gcc g++ cmake; do
         exist "$tool"
         if [[ $? -eq 1 ]];then
             if [ "$tool" == "g++" ];then
                 tool="gcc-c++"
+            fi
+            if [[ "$OS" == "Ubuntu" && "$tool" == "svn" ]];then
+                tool="subversion"
             fi
             tools="${tools} ${tool}"
         fi
     done
 
     if [[ "$tools" != "" ]];then
-        echo "sudo yum install -y $tools"
-        sudo yum install -y $tools
+        if [[ "$OS" == "CentOS" ]];then
+            echo "sudo yum install -y $tools"
+            sudo yum install -y $tools
+        fi
+        if [[ "$OS" == "Ubuntu" ]];then
+            echo "sudo apt-get install -y $tools"
+            sudo apt-get install -y $tools
+        fi
     fi
 }
 
@@ -114,6 +153,10 @@ function get()
     if [[ "$ver" == "git" ]]; then
         local ltag_num=`git ls-remote --tags "$url" | awk '{print $2}' | grep -v '{}' | awk -F"/" '{print $3}' | grep -iEv 'dev|alpha|beta|rc|pre|test|fips|engine|mac' | tr -d "a-zA-Z" | sed 's/^[-_]*//' | grep -E "^[0-9]{1,2}[-._][0-9]{1,3}" | sort -V | tail -n1`
         ltag=`git ls-remote --tags "$url" | awk '{print $2}' | grep -v '{}' | awk -F"/" '{print $3}' | grep -iEv 'dev|alpha|beta|rc|pre|test|fips|engine' | grep -e "$ltag_num" | sort -V | tail -n1`
+        if [[ "$ltag" == "master" ]]; then
+            ltag_num=`git ls-remote --tags "$url" | awk '{print $2}' | grep -v '{}' | awk -F"/" '{print $3}' | grep -iEv 'dev|alpha|beta|rc|pre|test|fips|engine|mac' | tr -d "a-zA-Z" | sed 's/^[-_]*//' | grep -E "^[0-9]{1,2}[-._][0-9]{1,3}" | sort -V | tail -n1`
+            ltag=`git ls-remote --tags "$url" | awk '{print $2}' | grep -v '{}' | awk -F"/" '{print $3}' | grep -iEv 'dev|alpha|beta|rc|pre|test|fips|engine' | grep -e "$ltag_num" | sort -V | tail -n1`
+        fi
     elif [[ "$ver" == "wget" ]]; then
         saferm wget.data
         run wget $url -c -O wget.data

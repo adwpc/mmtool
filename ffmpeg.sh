@@ -2,6 +2,9 @@
 #adwpc
 #it will update your packages !
 
+OS=""
+VER=""
+
 OBJ=""
 CURDIR=$(cd `dirname $0`; pwd)
 NAME=`basename $0`
@@ -14,7 +17,12 @@ ERR="$CURDIR/$NAME.err"
 
 function ffmpeg_inst()
 {
-    sudo yum -y install autoconf automake gettext gcc gcc-c++ make libtool mercurial pkgconfig patch libXext-devel glibc-static libstdc++-static
+    if [[ "$OS" == "CentOS" ]];then
+        sudo yum -y install git autoconf automake gettext gcc gcc-c++ make libtool mercurial pkgconfig patch libXext-devel glibc-static libstdc++-static
+    fi
+    if [[ "$OS" == "Ubuntu" ]];then
+        sudo apt-get -y install git automake autoconf gettext gcc g++ make libtool mercurial pkg-config patch libXext-dev libc-dev libstdc++-4.8-dev cmake libx11-dev xorg-dev
+    fi
 
     local src="$HOME/ffmpeg_source"
     local dst="$HOME/ffmpeg_build"
@@ -35,6 +43,7 @@ function ffmpeg_inst()
     inst $src https://github.com/webmproject/libwebp git ./configure --prefix="$dst" --disable-shared
     inst $src https://github.com/mirror/x264 git ./configure --prefix="$dst" --bindir="$bin" --enable-static
     # do not use cmake 3 for building x265, x265.pc will be bad for building static ffmpeg
+    saferm $bin/cmake
     inst $src https://github.com/videolan/x265 git "cd $src/x265/build/linux \&\& cmake -G \'Unix\ Makefiles\' -DCMAKE_INSTALL_PREFIX=$dst -DENABLE_SHARED:bool=off ../../source"
     inst $src https://github.com/xiph/opus git ./configure --prefix="$dst" --disable-shared
     inst $src https://github.com/mstorsjo/fdk-aac git ./configure --prefix="$dst" --disable-shared
