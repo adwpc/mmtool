@@ -38,7 +38,7 @@ fi
 rm "$LOG" > /dev/null 2>&1
 
 if [[ "$ERR" == "" ]];then
-    LOG="$0.err"
+    ERR="$0.err"
 fi
 
 rm "$ERR" > /dev/null 2>&1
