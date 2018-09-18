@@ -7,9 +7,9 @@ VER=""
 
 OBJ=""
 CURDIR=$(cd `dirname $0`; pwd)
-NAME=`basename $0`
-LOG="$CURDIR/$NAME.log"
-ERR="$CURDIR/$NAME.err"
+FNAME=`basename $0`
+LOG="$CURDIR/$FNAME.log"
+ERR="$CURDIR/$FNAME.err"
 #init common
 . $CURDIR/common.sh
 
@@ -53,7 +53,7 @@ function ffmpeg_inst()
     inst $src https://github.com/xiph/theora git ./configure --prefix="$dst" --with-ogg="$dst" --disable-shared
     inst $src git://git.sv.nongnu.org/freetype/freetype2 git ./configure --prefix="$dst" --enable-freetype-config --disable-shared --with-bzip2=no
     inst $src https://github.com/mstorsjo/rtmpdump git "cd $src/rtmpdump/librtmp \&\& sed -i \'s#prefix=/usr/local#prefix=$dst#\' Makefile \&\& sed -i \'s#SHARED=yes#SHARED=no#\' Makefile \&\& sed -i \'s#gcc#gcc -I$dst/include#\' Makefile \&\& sed -i \'s#\(CROSS_COMPILE\)ld#\(CROSS_COMPILE\)ld -L$dst/lib#\' Makefile"
-    inst $src https://github.com/SDL-mirror/SDL git ./configure --prefix="$dst" --disable-shared
+    inst $src https://github.com/SDL-mirror/SDL git ./configure --prefix="$dst" --disable-shared --enable-sndio=no
 
     inst $src https://sourceforge.net/projects/lame/files/latest/download wget "cd $src/lame* \&\& ./configure --prefix=$dst --bindir=$bin --disable-shared --enable-nasm"
 
@@ -61,7 +61,7 @@ function ffmpeg_inst()
     # aom build with cmake 3, master branch，0.1.0 has not CMakeList.txt
     inst $src https://aomedia.googlesource.com/aom master "mkdir -p $dst/aom \&\& cd $dst/aom \&\& cmake -D CMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=$dst $src/aom"
 
-    inst $src https://github.com/FFmpeg/FFmpeg git "./configure --prefix=$dst --enable-hardcoded-tables --pkg-config-flags=--static --extra-cflags=-I$dst/include --extra-ldflags=-L$dst/lib --extra-libs=-lpthread --extra-libs=-lm --extra-ldexeflags=-static --bindir=$bin --enable-gpl --enable-nonfree --enable-openssl --enable-protocol=rtmp --enable-librtmp --enable-demuxer=rtsp --enable-muxer=rtsp --enable-libfreetype --enable-libfdk-aac --enable-libmp3lame --enable-libopus --enable-libvorbis --enable-libtheora --enable-libx264 --enable-libx265 --enable-libvpx --enable-libwebp --enable-ffplay --enable-libaom --disable-shared --enable-static --disable-debug --enable-gpl --enable-nonfree"
+    inst $src https://github.com/FFmpeg/FFmpeg git "./configure --prefix=$dst --enable-hardcoded-tables --pkg-config-flags=--static --extra-cflags=-I$dst/include --extra-ldflags=-L$dst/lib --extra-libs=-lpthread --extra-libs=-lm --extra-ldexeflags=-static --bindir=$bin --enable-gpl --enable-nonfree --enable-openssl --enable-protocol=rtmp --enable-librtmp --enable-demuxer=rtsp --enable-muxer=rtsp --enable-libfreetype --enable-libfdk-aac --enable-libmp3lame --enable-libopus --enable-libvorbis --enable-libtheora --enable-libx264 --enable-libx265 --enable-libvpx --enable-libwebp --enable-ffplay --enable-libaom --disable-shared --enable-static --enable-gpl --enable-nonfree"
 
 }
 

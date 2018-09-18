@@ -1,10 +1,13 @@
 #!/bin/bash
 #adwpc
 
+CORES=`cat /proc/cpuinfo | grep "processor" | wc -l`
+
 if [ -f /etc/os-release ]; then
     # freedesktop.org and systemd
     . /etc/os-release
     OS=$NAME
+    unset NAME
     VER=$VERSION_ID
 elif type lsb_release >/dev/null 2>&1; then
     # linuxbase.org
@@ -31,19 +34,26 @@ else
     VER=$(uname -r)
 fi
 
+if [[ "$CURDIR" == "" ]];then
+    CURDIR=$(cd `dirname $0`; pwd)
+fi
+
+if [[ "$FNAME" == "" ]];then
+    FNAME=`basename $0`
+fi
+
 if [[ "$LOG" == "" ]];then
-    LOG="$0.log"
+    LOG="$CURDIR/$FNAME.log"
 fi
 
 rm "$LOG" > /dev/null 2>&1
 
 if [[ "$ERR" == "" ]];then
-    ERR="$0.err"
+    ERR="$CURDIR/$FNAME.err"
 fi
 
 rm "$ERR" > /dev/null 2>&1
 
-CORES=`cat /proc/cpuinfo | grep "processor" | wc -l`
 
 
 #check if exist
@@ -96,7 +106,7 @@ function echol()
         USER)   mode="\033[32;1m";;#green
         WARN)   mode="\033[33;1m";;#yellow
         ERROR)  mode="\033[31;1m";;#red
-        *)      mode="\033[0m";;#none
+        *)      mode="\033[35;1m";;#pink
     esac
     echo -e "$mode$@\033[0m"
     echo -e "$@" >> "$LOG"
@@ -106,7 +116,7 @@ function echol()
 #run cmd {params...}
 function run()
 {
-    echo "run $@"
+    echol "$@"
     eval $@ 1>>"$LOG" 2>>"$ERR"
     local ret=$?
     if [[ $ret -ne 0 ]];then
@@ -127,8 +137,7 @@ function saferm()
     # local name=`echo "$1" | awk -F'/' '{print $NF}' | awk -F'.' '{print $1}'`
     local name="${1%/}"
     name="${name##*/}"
-    mv $1 "/tmp/$name`date +%Y%m%d%H%M%S`" 
-    # > /dev/null 2>&1
+    mv $1 "/tmp/$name`date +%Y%m%d%H%M%S`" > /dev/null 2>&1
 }
 
 
@@ -161,6 +170,9 @@ function get()
         saferm wget.data
         run wget $url -c -O wget.data
         uz wget.data
+    elif [[ "$ver" == "master" ]]; then
+        run git clone --depth=1 -b master "$url"
+        return 0
     else
         ltag=`git ls-remote --tags "$url" | awk '{print $2}' | grep -v '{}' | awk -F"/" '{print $3}' | grep -iEv 'dev|alpha|beta|rc|pre|test|fips|engine' | grep -w "$ver" | sort -V | head -n1`
     fi
@@ -178,9 +190,9 @@ function get()
             else
                 echol INFO "stable"
                 if [ "$rename" == "" ];then
-                    run git clone --depth=1 -b stable "$url"
+                    run git clone --depth=1 -b $stable "$url"
                 else
-                    run git clone --depth=1 -b stable "$url" "$rename"
+                    run git clone --depth=1 -b $stable "$url" "$rename"
                 fi
             fi
         else
@@ -279,7 +291,6 @@ function inst() {
     local src="$dldir/$folder"
     if [[ "$ver" != "wget" ]]; then
         cd "$src"
-        echo "$src"
     fi
 
     #参数列表左移
