@@ -131,6 +131,13 @@ vm/min_free_kbytes = 65536
 net.ipv4.route.flush = 1
 # net.ipv6.route.flush = 1
 
+# enable tcp timewait socket reuse
+net.ipv4.tcp_tw_reuse = 1
+# enable tcp timewait socket recycle
+net.ipv4.tcp_tw_recycle = 1
+# tcp FIN_WAIT_2 timeout default 60s
+net.ipv4.tcp_fin_timeout = 10
+
 EOF
     sudo mv sysctl.conf /etc
     sudo sysctl -p
