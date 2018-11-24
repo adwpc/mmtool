@@ -19,6 +19,11 @@ fs.nr_open = 1048576
 #the system open file limit
 fs.file-max = 1048576
 
+# set free -h  free size
+vm.min_free_kbytes=1048576
+# Increasing vfs_cache_pressure beyond 100 causes the kernel to prefer to reclaim dentries and inodes.
+vm.vfs_cache_pressure=200
+
 
 #port range
 net.ipv4.ip_local_port_range = 1024 65535
@@ -38,6 +43,7 @@ net.ipv4.tcp_window_scaling = 1
 
 net.ipv4.tcp_syncookies = 1
 net.ipv4.tcp_max_syn_backlog = 65535
+net.ipv4.tcp_synack_retries = 1
 
 
 # Controls the System Request debugging functionality of the kernel
@@ -118,8 +124,13 @@ net.ipv4.icmp_echo_ignore_broadcasts = 1
 # Enable bad error message Protection
 net.ipv4.icmp_ignore_bogus_error_responses = 1
 
+# enable tcp timewait socket reuse
+net.ipv4.tcp_tw_reuse = 1
+# enable tcp timewait socket recycle
+net.ipv4.tcp_tw_recycle = 1
+# tcp FIN_WAIT_2 timeout default 60s
+net.ipv4.tcp_fin_timeout = 10
 
-vm/min_free_kbytes = 65536
 
 
 # disable ipv6
@@ -130,13 +141,6 @@ vm/min_free_kbytes = 65536
 # This will ensure that immediately subsequent connections use the new values
 net.ipv4.route.flush = 1
 # net.ipv6.route.flush = 1
-
-# enable tcp timewait socket reuse
-net.ipv4.tcp_tw_reuse = 1
-# enable tcp timewait socket recycle
-net.ipv4.tcp_tw_recycle = 1
-# tcp FIN_WAIT_2 timeout default 60s
-net.ipv4.tcp_fin_timeout = 10
 
 EOF
     sudo mv sysctl.conf /etc
