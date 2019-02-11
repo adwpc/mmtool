@@ -6,6 +6,9 @@ sudo rpm -Uvh endpoint-repo-1.7-1.x86_64.rpm
 sudo yum install -y git
 rm endpoint-repo-1.7-1.x86_64.rpm
 
+#ifconfig
+sudo yum install net-tools
+
 #fish shell
 cd /etc/yum.repos.d/
 sudo wget https://download.opensuse.org/repositories/shells:fish:release:2/CentOS_7/shells:fish:release:2.repo
@@ -27,7 +30,7 @@ echo 'set -x GOROOT /usr/local/go' >> ~/.config/fish/conf.d/omf.fish
 echo "set -x GOPATH ~/work" >> ~/.config/fish/conf.d/omf.fish
 echo "set -x GOBIN ~/work/bin" >> ~/.config/fish/conf.d/omf.fish
 mkdir -p $GOBIN
-echo "set -x PATH /usr/local/go/bin ~/work/bin $PATH" >> ~/.config/fish/conf.d/omf.fish
+echo "set -x PATH /usr/local/go/bin ~/work/bin /usr/sbin $PATH" >> ~/.config/fish/conf.d/omf.fish
 source ~/.config/fish/conf.d/omf.fish
 
 #vim8
