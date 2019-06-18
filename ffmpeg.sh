@@ -27,7 +27,7 @@ function ffmpeg_inst()
     local src="$HOME/ffmpeg_source"
     local dst="$HOME/ffmpeg_build"
     local bin="$HOME/bin/"
-    export PKG_CONFIG_PATH="$dst/lib/pkgconfig"
+    export PKG_CONFIG_PATH="$dst/lib/pkgconfig:$dst/lib64/pkgconfig"
     export PATH="$bin:$PATH"
 
     saferm $dst
