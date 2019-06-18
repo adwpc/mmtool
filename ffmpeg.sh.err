@@ -1,0 +1,1595 @@
+Cloning into 'yasm'...
+Note: checking out 'ba463d3c26c0ece2e797b8d6381b161633b5971a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+1.3.0
+configure.ac:14: installing 'config/install-sh'
+configure.ac:14: installing 'config/missing'
+Makefile.am: installing 'config/depcomp'
+parallel-tests: installing 'config/test-driver'
+configure: WARNING: xmlto not found, manpages will not be rebuilt.
+./configure: line 6946: gt_INTL_MACOSX: command not found
+configure: WARNING: xmlto not found, manpages will not be rebuilt.
+./configure: line 6946: gt_INTL_MACOSX: command not found
+fail to map group of size 2 for tab size 512
+/usr/bin/xgettext: warning: file 'modules/parsers/gas/gas-token.re' extension 're' is unknown; will try C
+modules/parsers/gas/gas-token.re:289: warning: unterminated character constant
+/usr/bin/xgettext: warning: file 'modules/parsers/nasm/nasm-token.re' extension 're' is unknown; will try C
+Cloning into 'nasm'...
+Note: checking out '74246c499ea4313fb8837977dc0c135fc50567c0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
++ autoreconf
++ rm -rf autom4te.cache config.log config.status
++ rm -f Makefile rdoff/Makefile doc/Makefile
++ rm -f config.h.in config.h config/config.h
+configure: WARNING: No asciidoc package found
+configure: WARNING: No xmlto package found
+Reading insns.dat...
+Reading insns.dat...
+Reading insns.dat...
+Reading insns.dat...
+Writing x86/insnsd.c...
+Writing x86/insnsa.c...
+Done: 6609 instructions
+Reading insns.dat...
+Writing x86/insnsb.c...
+Writing x86/insnsi.h...
+Done: 6609 instructions
+Done: 6609 instructions
+Done: 6609 instructions
+2283 vectors, trying n = 2048...
+93 vectors, trying n = 128...
+1: Graph is cyclic
+1: Collision: 239,1648: cmpunordps with vpsubusb
+2: Done: n = 128, sv = [0xaee7ac5c, 0xcabdec91]
+Reading insns.dat...
+Reading insns.dat...
+2: Graph is cyclic
+3: Collision: 565,2334: fucomp with vfmsub123ss
+4: Graph is cyclic
+5: Graph is cyclic
+6: Graph is cyclic
+7: Done: n = 2048, sv = [0xace2d0e4, 0x80575791]
+38 vectors, trying n = 32...
+1: Done: n = 32, sv = [0x076259c3, 0xe291c26c]
+4 vectors, trying n = 4...
+1: Done: n = 4, sv = [0x076259c3, 0xe291c26c]
+Writing x86/insnsn.c...
+Done: 6609 instructions
+Writing x86/iflag.c...
+Done: 6609 instructions
+Writing x86/iflaggen.h...
+Done: 6609 instructions
+In file included from stdlib/vsnprintf.c:15:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from stdlib/vsnprintf.c:16:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/nasm.c:47:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from asm/nasm.c:49:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from stdlib/snprintf.c:13:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/crc64.c:35:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/malloc.c:42:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/malloc.c:43:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+nasmlib/malloc.c:45:18: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ static no_return nasm_alloc_failed(void)
+                  ^
+nasmlib/md5c.c: In function ‘MD5Final’:
+nasmlib/md5c.c:140:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     ((uint32_t *) ctx->in)[14] = ctx->bits[0];
+     ^
+nasmlib/md5c.c:141:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     ((uint32_t *) ctx->in)[15] = ctx->bits[1];
+     ^
+In file included from nasmlib/string.c:43:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/file.h:38:0,
+                 from nasmlib/file.c:34:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/file.h:39:0,
+                 from nasmlib/file.c:34:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from nasmlib/file.h:38:0,
+                 from nasmlib/mmap.c:34:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/file.h:39:0,
+                 from nasmlib/mmap.c:34:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from nasmlib/realpath.c:50:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/path.c:42:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/path.c:43:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from nasmlib/filename.c:39:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/filename.c:40:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from nasmlib/srcfile.c:43:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/zerobuf.c:39:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/readnum.c:42:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/readnum.c:43:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from nasmlib/bsi.c:42:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from nasmlib/hashtbl.c:43:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/raa.c:34:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/saa.c:35:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/strlist.h:45:0,
+                 from nasmlib/strlist.c:42:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/perfhash.h:38:0,
+                 from nasmlib/perfhash.c:34:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from nasmlib/badenum.c:34:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from common/common.c:39:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from x86/insnsa.c:3:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from x86/insnsb.c:3:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from x86/insnsd.c:3:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from x86/regflags.c:4:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from ./include/disp8.h:41,
+                 from x86/disp8.c:38:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/error.c:42:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/error.c:43:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+asm/error.c:99:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_fatal(int flags, const char *fmt, ...)
+            ^
+asm/error.c:108:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic(int flags, const char *fmt, ...)
+            ^
+asm/error.c:117:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line)
+            ^
+asm/error.c:122:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *file, int line, const char *msg)
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/float.c:45:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/float.c:47:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/directiv.c:45:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/directiv.c:48:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/perfhash.h:38:0,
+                 from asm/directiv.h:9,
+                 from asm/directbl.c:6:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/pragma.c:47:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/pragma.c:50:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/assemble.c:184:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/assemble.c:186:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/labels.c:44:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/labels.c:46:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/parser.c:46:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/parser.c:49:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/preproc.c:73:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/preproc.c:75:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from asm/quote.c:42:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/pptok.c:6:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/listing.c:46:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/listing.c:48:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/eval.c:46:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/eval.c:49:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/exprlib.c:40:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/exprdump.c:40:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/stdscan.c:41:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/stdscan.c:43:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from asm/strfunc.c:40:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/tokhash.c:8:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/segalloc.c:39:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from asm/preproc-nop.c:50:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/rdstrnum.c:43:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from asm/preproc-nop.c:52:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from macros/macros.c:22:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/outform.h:68,
+                 from output/outform.c:47:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/outlib.c:41:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/outlib.h:38:0,
+                 from output/outlib.c:42:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/strtbl.c:45:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/legacy.c:55:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/strtbl.c:47:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from output/outlib.h:38:0,
+                 from output/legacy.c:56:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/nulldbg.c:34:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/outlib.h:38:0,
+                 from output/nulldbg.c:36:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/nullout.c:34:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/outaout.c:46:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/outlib.h:38:0,
+                 from output/nullout.c:36:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from output/outaout.c:48:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/outbin.c:83:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/outbin.c:85:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/outcoff.c:47:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/outcoff.c:50:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/outelf.c:43:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/outelf.c:45:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/outobj.c:47:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/outobj.c:49:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/outas86.c:46:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/outas86.c:48:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/outrdf2.c:48:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/outrdf2.c:50:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/outdbg.c:47:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/outlib.h:38:0,
+                 from output/outdbg.c:50:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/outieee.c:77:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/outieee.c:79:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/outmacho.c:46:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/outmacho.c:50:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from output/codeview.c:45:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from output/codeview.c:47:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from disasm/disasm.c:44:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from disasm/sync.c:44:0:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from ./include/nasm.h:46:0,
+                 from ./include/insns.h:12,
+                 from disasm/ndisasm.c:47:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from disasm/ndisasm.c:50:0:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from rdoff/rdfutils.h:44:0,
+                 from rdoff/rdfdump.c:44:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from rdoff/rdfutils.h:45:0,
+                 from rdoff/rdfdump.c:44:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from rdoff/rdfutils.h:44:0,
+                 from rdoff/rdoff.c:50:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from rdoff/rdfutils.h:45:0,
+                 from rdoff/rdoff.c:50:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from rdoff/rdfutils.h:44:0,
+                 from rdoff/rdfload.h:15,
+                 from rdoff/rdfload.c:51:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from rdoff/rdfutils.h:45:0,
+                 from rdoff/rdfload.h:15,
+                 from rdoff/rdfload.c:51:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from rdoff/rdfutils.h:44:0,
+                 from rdoff/symtab.c:40:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from rdoff/rdfutils.h:45:0,
+                 from rdoff/symtab.c:40:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from rdoff/rdfutils.h:44:0,
+                 from rdoff/collectn.c:7:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from rdoff/rdfutils.h:45:0,
+                 from rdoff/collectn.c:7:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from rdoff/rdfutils.h:44:0,
+                 from rdoff/rdlib.c:44:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from rdoff/rdfutils.h:45:0,
+                 from rdoff/rdlib.c:44:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from rdoff/rdfutils.h:44:0,
+                 from rdoff/segtab.c:34:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from rdoff/rdfutils.h:45:0,
+                 from rdoff/segtab.c:34:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from rdoff/rdfutils.h:44:0,
+                 from rdoff/ldrdf.c:59:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from rdoff/rdfutils.h:45:0,
+                 from rdoff/ldrdf.c:59:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from rdoff/rdfutils.h:44:0,
+                 from rdoff/rdfload.h:15,
+                 from rdoff/rdx.c:49:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from rdoff/rdfutils.h:45:0,
+                 from rdoff/rdfload.h:15,
+                 from rdoff/rdx.c:49:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from rdoff/rdfutils.h:44:0,
+                 from rdoff/rdflib.c:60:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from rdoff/rdfutils.h:45:0,
+                 from rdoff/rdflib.c:60:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+In file included from rdoff/rdfutils.h:44:0,
+                 from rdoff/rdfload.h:15,
+                 from rdoff/rdf2bin.c:46:
+./include/nasmlib.h:116:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_assert_failed(const char *, int, const char *);
+            ^
+In file included from rdoff/rdfutils.h:45:0,
+                 from rdoff/rdfload.h:15,
+                 from rdoff/rdf2bin.c:46:
+./include/error.h:52:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_fatal(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:53:30: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func printf_func(2, 3) nasm_panic(int flags, const char *fmt, ...);
+                              ^
+./include/error.h:54:12: warning: ISO C99 does not support ‘_Noreturn’ [-Wpedantic]
+ fatal_func nasm_panic_from_macro(const char *file, int line);
+            ^
+/usr/bin/install: cannot stat ‘./nasm.1’: No such file or directory
+make: *** [install] Error 1
+/usr/bin/install: cannot stat ‘./nasm.1’: No such file or directory
+make: *** [install] Error 1
+Cloning into 'openssl'...
+Note: checking out '3ce7bc40a3c48da1c96c2d04c10045bd797c6aa3'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+make[1]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+ar: creating ../libcrypto.a
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+rsa_oaep.c: In function 'RSA_padding_check_PKCS1_OAEP_mgf1':
+rsa_oaep.c:241:24: warning: 'dblen' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         OPENSSL_cleanse(db, dblen);
+                        ^
+rsa_oaep.c: In function 'RSA_padding_check_PKCS1_OAEP':
+rsa_oaep.c:241:24: warning: 'dblen' may be used uninitialized in this function [-Wmaybe-uninitialized]
+rsa_oaep.c:123:12: note: 'dblen' was declared here
+     int i, dblen, mlen = -1, one_index = 0, msg_index;
+            ^
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[1]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[1]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+ar: creating ../libssl.a
+make[1]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[1]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[1]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+make[2]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.
+WARNING: can't open config file: /home/adam/ffmpeg_build/ssl/openssl.cnf
+WARNING: can't open config file: /home/adam/ffmpeg_build/ssl/openssl.cnf
+WARNING: can't open config file: /home/adam/ffmpeg_build/ssl/openssl.cnf
+WARNING: can't open config file: /home/adam/ffmpeg_build/ssl/openssl.cnf
+WARNING: can't open config file: /home/adam/ffmpeg_build/ssl/openssl.cnf
+WARNING: can't open config file: /home/adam/ffmpeg_build/ssl/openssl.cnf
+WARNING: can't open config file: /home/adam/ffmpeg_build/ssl/openssl.cnf
+WARNING: can't open config file: /home/adam/ffmpeg_build/ssl/openssl.cnf
+Cloning into 'zlib'...
+Note: checking out 'cacf7f1d4e3d44d871b605da3b647f07d718623f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+Cloning into 'libvpx'...
+Note: checking out 'b85ac11737430a7f600ac4efb643d4833afd7428'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+Cloning into 'libwebp'...
+Note: checking out '2b98df90cb75cfc1cf4505a59a7b25499fa10887'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+configure.ac:10: installing './ar-lib'
+configure.ac:14: installing './compile'
+configure.ac:4: installing './config.guess'
+configure.ac:4: installing './config.sub'
+configure.ac:6: installing './install-sh'
+configure.ac:6: installing './missing'
+examples/Makefile.am: installing './depcomp'
+configure: WARNING: smmintrin.h: accepted by the compiler, rejected by the preprocessor!
+configure: WARNING: smmintrin.h: proceeding with the compiler's result
+configure: WARNING: SDL library not available - no sdl.h
+configure: WARNING: Optional SDL library not found
+configure: WARNING: png library not available - no png.h
+configure: WARNING: jpeg library not available - no jpeglib.h
+configure: WARNING: tiff library not available - no tiffio.h
+configure: WARNING: gif library not available - no gif_lib.h
+Cloning into 'x264'...
+Cloning into 'x265'...
+Note: checking out 'b7bef93b55162212444907709e5d669dd58cbf0b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+CMake Error: your CXX compiler: "CMAKE_CXX_COMPILER-NOTFOUND" was not found.   Please set CMAKE_CXX_COMPILER to a valid compiler path or name.
+CMake Error at CMakeLists.txt:133 (if):
+  if given arguments:
+
+    "STREQUAL" "Clang"
+
+  Unknown arguments specified
+
+
+CMake Error: your CXX compiler: "CMAKE_CXX_COMPILER-NOTFOUND" was not found.   Please set CMAKE_CXX_COMPILER to a valid compiler path or name.
+CMake Error at CMakeLists.txt:133 (if):
+  if given arguments:
+
+    "STREQUAL" "Clang"
+
+  Unknown arguments specified
+
+
+Cloning into 'opus'...
+Note: checking out 'e85ed7726db5d677c9c0677298ea0cb9c65bdd23'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+configure.ac:39: installing './compile'
+configure.ac:36: installing './config.guess'
+configure.ac:36: installing './config.sub'
+configure.ac:33: installing './install-sh'
+configure.ac:33: installing './missing'
+Makefile.am:316: warning: '%'-style pattern rules are a GNU make extension
+Makefile.am:319: warning: '%'-style pattern rules are a GNU make extension
+Makefile.am: installing './INSTALL'
+Makefile.am: installing './depcomp'
+parallel-tests: installing './test-driver'
+make[2]: *** No rule to make target `clean'.  Stop.
+make[1]: [clean-local] Error 2 (ignored)
+Cloning into 'fdk-aac'...
+Note: checking out '2326faaf8f2cdf2c3a9108ccdaf1d7551aec543e'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: configure.ac: not using Autoheader
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:22: installing './config.guess'
+configure.ac:22: installing './config.sub'
+configure.ac:7: installing './install-sh'
+configure.ac:7: installing './missing'
+Makefile.am: installing './depcomp'
+autoreconf: Leaving directory `.'
+./libtool: line 1125: g++: command not found
+./libtool: line 1125: g++: command not found
+./libtool: line 1125: g++: command not found
+make: *** [libAACdec/src/aac_ram.lo] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [libAACdec/src/FDK_delay.lo] Error 1
+make: *** [libAACdec/src/aacdec_drc.lo] Error 1
+./libtool: line 1125: g++: command not found
+make: *** [libAACdec/src/aac_rom.lo] Error 1
+./libtool: line 1125: g++: command not found
+make: *** [libAACdec/src/aac_ram.lo] Error 1
+make: *** Waiting for unfinished jobs....
+./libtool: line 1125: g++: command not found
+./libtool: line 1125: g++: command not found
+./libtool: line 1125: g++: command not found
+make: *** [libAACdec/src/aacdec_drc.lo] Error 1
+make: *** [libAACdec/src/FDK_delay.lo] Error 1
+make: *** [libAACdec/src/aac_rom.lo] Error 1
+./libtool: line 1125: g++: command not found
+make: *** [libAACdec/src/FDK_delay.lo] Error 1
+./libtool: line 1125: g++: command not found
+make: *** [libAACdec/src/FDK_delay.lo] Error 1
+Cloning into 'ogg'...
+Note: checking out '4380566a44b8d5e85ad511c9c17eb04197863ec5'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+configure.ac:21: installing './compile'
+configure.ac:20: installing './config.guess'
+configure.ac:20: installing './config.sub'
+configure.ac:7: installing './install-sh'
+configure.ac:7: installing './missing'
+src/Makefile.am: installing './depcomp'
+Cloning into 'vorbis'...
+Note: checking out 'd22c3ab5f633460abc2532feee60ca0892134cbf'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+configure.ac:68: installing './compile'
+configure.ac:14: installing './config.guess'
+configure.ac:14: installing './config.sub'
+configure.ac:16: installing './install-sh'
+configure.ac:16: installing './missing'
+examples/Makefile.am: installing './depcomp'
+Cloning into 'speex'...
+Note: checking out '7fc5f8b88519a2aafdf4b6a5c31ef3d54b560d68'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+configure.ac:29: installing './config.guess'
+configure.ac:29: installing './config.sub'
+configure.ac:26: installing './install-sh'
+configure.ac:26: installing './missing'
+libspeex/Makefile.am: installing './depcomp'
+Cloning into 'theora'...
+Note: checking out '7ffd8b2ecfc2d93ae5e16028e7528e609266bfbf'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+configure.ac:59: installing './compile'
+configure.ac:9: installing './config.guess'
+configure.ac:9: installing './config.sub'
+configure.ac:14: installing './install-sh'
+configure.ac:14: installing './missing'
+doc/spec/Makefile.am: installing './depcomp'
+examples/Makefile.am:3: warning: 'INCLUDES' is the old name for 'AM_CPPFLAGS' (or '*_CPPFLAGS')
+lib/Makefile.am:1: warning: 'INCLUDES' is the old name for 'AM_CPPFLAGS' (or '*_CPPFLAGS')
+tests/Makefile.am:1: warning: 'INCLUDES' is the old name for 'AM_CPPFLAGS' (or '*_CPPFLAGS')
+parallel-tests: installing './test-driver'
+configure: WARNING: *** doxygen not found, API documentation will not be built
+configure: WARNING: *** Format Specification will not built.
+configure: WARNING: *** Unable to find SDL -- Not compiling example players ***
+configure: WARNING: *** doxygen not found, API documentation will not be built
+configure: WARNING: *** Format Specification will not built.
+configure: WARNING: *** Unable to find SDL -- Not compiling example players ***
+decode.c: In function 'th_decode_alloc':
+decode.c:400:49: warning: iteration 2u invokes undefined behavior [-Waggressive-loop-optimizations]
+       qsum+=_dec->state.dequant_tables[qti][pli][qi][12]+
+                                                 ^
+decode.c:396:3: note: containing loop
+   for(qi=0;qi<64;qi++){
+   ^
+analyze.c: In function 'oc_enc_sb_transform_quantize_intra_chroma':
+analyze.c:1198:20: warning: variable 'sb_flags' set but not used [-Wunused-but-set-variable]
+   oc_sb_flags     *sb_flags;
+                    ^
+analyze.c: In function 'oc_enc_analyze_intra':
+analyze.c:1235:27: warning: variable 'embs' set but not used [-Wunused-but-set-variable]
+   oc_mb_enc_info         *embs;
+                           ^
+analyze.c: In function 'oc_enc_analyze_inter':
+analyze.c:1879:27: warning: variable 'vdec' set but not used [-Wunused-but-set-variable]
+   int                     vdec;
+                           ^
+analyze.c:1874:27: warning: variable 'qi' set but not used [-Wunused-but-set-variable]
+   int                     qi;
+                           ^
+Cloning into 'freetype2'...
+Note: checking out 'fbbcf50367403a6316a013b51690071198962920'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+Cloning into 'rtmpdump'...
+rtmp.c: In function ‘RTMP_ReadPacket’:
+rtmp.c:3567:7: warning: variable ‘didAlloc’ set but not used [-Wunused-but-set-variable]
+   int didAlloc = FALSE;
+       ^
+ar: creating librtmp.a
+Cloning into 'SDL'...
+Note: checking out '9333e80281655d2351913ee2418393af991efd36'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+Package dbus-1 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `dbus-1.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'dbus-1' found
+Package ibus-1.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `ibus-1.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'ibus-1.0' found
+Package fcitx was not found in the pkg-config search path.
+Perhaps you should add the directory containing `fcitx.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'fcitx' found
+/home/adam/ffmpeg_source/SDL/src/video/x11/SDL_x11modes.c: In function 'X11_GetDisplayModes':
+/home/adam/ffmpeg_source/SDL/src/video/x11/SDL_x11modes.c:826:14: warning: unused variable 'display' [-Wunused-variable]
+     Display *display = ((SDL_VideoData *) _this->driverdata)->display;
+              ^
+/home/adam/ffmpeg_source/SDL/src/video/x11/SDL_x11modes.c: In function 'X11_SetDisplayMode':
+/home/adam/ffmpeg_source/SDL/src/video/x11/SDL_x11modes.c:972:26: warning: unused variable 'modedata' [-Wunused-variable]
+     SDL_DisplayModeData *modedata = (SDL_DisplayModeData *)mode->driverdata;
+                          ^
+/home/adam/ffmpeg_source/SDL/src/video/x11/SDL_x11modes.c:971:22: warning: unused variable 'data' [-Wunused-variable]
+     SDL_DisplayData *data = (SDL_DisplayData *) sdl_display->driverdata;
+                      ^
+/home/adam/ffmpeg_source/SDL/src/video/x11/SDL_x11modes.c:970:14: warning: unused variable 'display' [-Wunused-variable]
+     Display *display = viddata->display;
+              ^
+--2019-06-18 16:54:42--  https://sourceforge.net/projects/lame/files/latest/download
+Connecting to 192.168.33.39:8118... connected.
+Proxy request sent, awaiting response... 302 Found
+Location: https://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz?r=&ts=1560848085&use_mirror=managedway [following]
+--2019-06-18 16:54:43--  https://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz?r=&ts=1560848085&use_mirror=managedway
+Connecting to 192.168.33.39:8118... connected.
+Proxy request sent, awaiting response... 302 Found
+Location: https://managedway.dl.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz [following]
+--2019-06-18 16:54:44--  https://managedway.dl.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz
+Connecting to 192.168.33.39:8118... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: 1524133 (1.5M) [application/x-gzip]
+Saving to: ‘wget.data’
+
+     0K .......... .......... .......... .......... ..........  3%  284K 5s
+    50K .......... .......... .......... .......... ..........  6%  407K 4s
+   100K .......... .......... .......... .......... .......... 10%  615K 3s
+   150K .......... .......... .......... .......... .......... 13%  597K 3s
+   200K .......... .......... .......... .......... .......... 16%  612K 3s
+   250K .......... .......... .......... .......... .......... 20%  606K 2s
+   300K .......... .......... .......... .......... .......... 23%  610K 2s
+   350K .......... .......... .......... .......... .......... 26%  444K 2s
+   400K .......... .......... .......... .......... .......... 30%  599K 2s
+   450K .......... .......... .......... .......... .......... 33%  599K 2s
+   500K .......... .......... .......... .......... .......... 36%  630K 2s
+   550K .......... .......... .......... .......... .......... 40%  606K 2s
+   600K .......... .......... .......... .......... .......... 43%  606K 2s
+   650K .......... .......... .......... .......... .......... 47%  604K 1s
+   700K .......... .......... .......... .......... .......... 50%  606K 1s
+   750K .......... .......... .......... .......... .......... 53%  462K 1s
+   800K .......... .......... .......... .......... .......... 57%  604K 1s
+   850K .......... .......... .......... .......... .......... 60%  609K 1s
+   900K .......... .......... .......... .......... .......... 63%  604K 1s
+   950K .......... .......... .......... .......... .......... 67%  597K 1s
+  1000K .......... .......... .......... .......... .......... 70%  610K 1s
+  1050K .......... .......... .......... .......... .......... 73%  601K 1s
+  1100K .......... .......... .......... .......... .......... 77%  613K 1s
+  1150K .......... .......... .......... .......... .......... 80%  451K 1s
+  1200K .......... .......... .......... .......... .......... 83%  608K 0s
+  1250K .......... .......... .......... .......... .......... 87%  610K 0s
+  1300K .......... .......... .......... .......... .......... 90%  599K 0s
+  1350K .......... .......... .......... .......... .......... 94%  600K 0s
+  1400K .......... .......... .......... .......... .......... 97%  610K 0s
+  1450K .......... .......... .......... ........             100%  682K=2.7s
+
+2019-06-18 16:54:48 (558 KB/s) - ‘wget.data’ saved [1524133/1524133]
+
+xmm_quantize_sub.c:64:1: warning: ‘force_align_arg_pointer’ attribute ignored [-Wattributes]
+ {
+ ^
+xmm_quantize_sub.c:125:1: warning: ‘force_align_arg_pointer’ attribute ignored [-Wattributes]
+ {
+ ^
+xmm_quantize_sub.c:137:1: warning: ‘force_align_arg_pointer’ attribute ignored [-Wattributes]
+ {
+ ^
+Cloning into 'CMake'...
+Note: checking out 'f3e9a6ff62f6f58cd661dd447c22a01c50f6f4ad'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No rule to make target `install'.  Stop.
+make: *** No rule to make target `install'.  Stop.
+make: *** No rule to make target `clean'.  Stop.
+make: *** No rule to make target `clean'.  Stop.
+Cloning into 'aom'...
+CMake Error at CMakeLists.txt:11 (cmake_minimum_required):
+  CMake 3.5 or higher is required.  You are running version 2.8.12.2
+
+
+CMake Error at CMakeLists.txt:11 (cmake_minimum_required):
+  CMake 3.5 or higher is required.  You are running version 2.8.12.2
+
+
+Cloning into 'FFmpeg'...
+Note: checking out '4154f8967820ca734a77ce91bb590cd77649dee8'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+Makefile:2: ffbuild/config.mak: No such file or directory
+Makefile:40: /tools/Makefile: No such file or directory
+Makefile:41: /ffbuild/common.mak: No such file or directory
+Makefile:91: /libavutil/Makefile: No such file or directory
+Makefile:91: /ffbuild/library.mak: No such file or directory
+Makefile:93: /fftools/Makefile: No such file or directory
+Makefile:94: /doc/Makefile: No such file or directory
+Makefile:95: /doc/examples/Makefile: No such file or directory
+Makefile:160: /tests/Makefile: No such file or directory
+make: *** No rule to make target `/tests/Makefile'.  Stop.
+Makefile:2: ffbuild/config.mak: No such file or directory
+Makefile:40: /tools/Makefile: No such file or directory
+Makefile:41: /ffbuild/common.mak: No such file or directory
+Makefile:91: /libavutil/Makefile: No such file or directory
+Makefile:91: /ffbuild/library.mak: No such file or directory
+Makefile:93: /fftools/Makefile: No such file or directory
+Makefile:94: /doc/Makefile: No such file or directory
+Makefile:95: /doc/examples/Makefile: No such file or directory
+Makefile:160: /tests/Makefile: No such file or directory
+make: *** No rule to make target `/tests/Makefile'.  Stop.
+Makefile:2: ffbuild/config.mak: No such file or directory
+Makefile:40: /tools/Makefile: No such file or directory
+Makefile:41: /ffbuild/common.mak: No such file or directory
+Makefile:91: /libavutil/Makefile: No such file or directory
+Makefile:91: /ffbuild/library.mak: No such file or directory
+Makefile:93: /fftools/Makefile: No such file or directory
+Makefile:94: /doc/Makefile: No such file or directory
+Makefile:95: /doc/examples/Makefile: No such file or directory
+Makefile:160: /tests/Makefile: No such file or directory
+make: *** No rule to make target `/tests/Makefile'.  Stop.
+Makefile:2: ffbuild/config.mak: No such file or directory
+Makefile:40: /tools/Makefile: No such file or directory
+Makefile:41: /ffbuild/common.mak: No such file or directory
+Makefile:91: /libavutil/Makefile: No such file or directory
+Makefile:91: /ffbuild/library.mak: No such file or directory
+Makefile:93: /fftools/Makefile: No such file or directory
+Makefile:94: /doc/Makefile: No such file or directory
+Makefile:95: /doc/examples/Makefile: No such file or directory
+Makefile:160: /tests/Makefile: No such file or directory
+make: *** No rule to make target `/tests/Makefile'.  Stop.
+Makefile:2: ffbuild/config.mak: No such file or directory
+Makefile:40: /tools/Makefile: No such file or directory
+Makefile:41: /ffbuild/common.mak: No such file or directory
+Makefile:91: /libavutil/Makefile: No such file or directory
+Makefile:91: /ffbuild/library.mak: No such file or directory
+Makefile:93: /fftools/Makefile: No such file or directory
+Makefile:94: /doc/Makefile: No such file or directory
+Makefile:95: /doc/examples/Makefile: No such file or directory
+Makefile:160: /tests/Makefile: No such file or directory
+make: *** No rule to make target `/tests/Makefile'.  Stop.
+Makefile:2: ffbuild/config.mak: No such file or directory
+Makefile:40: /tools/Makefile: No such file or directory
+Makefile:41: /ffbuild/common.mak: No such file or directory
+Makefile:91: /libavutil/Makefile: No such file or directory
+Makefile:91: /ffbuild/library.mak: No such file or directory
+Makefile:93: /fftools/Makefile: No such file or directory
+Makefile:94: /doc/Makefile: No such file or directory
+Makefile:95: /doc/examples/Makefile: No such file or directory
+Makefile:160: /tests/Makefile: No such file or directory
+make: *** No rule to make target `/tests/Makefile'.  Stop.

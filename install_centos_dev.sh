@@ -40,9 +40,9 @@ wget http://mirror.ghettoforge.org/distributions/gf/el/7/plus/x86_64/vim-enhance
 sudo yum install -y vim*.rpm
 rm vim*.rpm
 
-#gcc 
+#gcc
 sudo yum install -y centos-release-scl
-sudo yum install -y devtoolset-7-gcc-c++
+sudo yum install -y devtoolset-8-gcc-c++
 
 
 #vimrc
@@ -74,7 +74,11 @@ rm master.zip
 echo 'alias rm=trash-put' >> ~/.config/fish/conf.d/omf.fish
 echo 'alias vi=vim' >> ~/.config/fish/conf.d/omf.fish
 
+#disable firewall, need password
+systemctl stop firewalld.service
+systemctl disable firewalld.service
 
+#change shell, need password
 chsh -s /usr/bin/fish
 
 echo 'sudo reboot to enjoy!'

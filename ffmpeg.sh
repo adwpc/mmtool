@@ -17,7 +17,7 @@ ERR="$CURDIR/$FNAME.err"
 
 function ffmpeg_inst()
 {
-    if [[ "$OS" == "CentOS" ]];then
+    if [[ "$OS" =~ "CentOS" ]];then
         sudo yum -y install git autoconf automake gettext gcc gcc-c++ make libtool mercurial pkgconfig patch libXext-devel glibc-static libstdc++-static
     fi
     if [[ "$OS" == "Ubuntu" ]];then
